@@ -1,16 +1,16 @@
-  #Sign your name:________________
+  #Sign your name:Julie
 
 '''
  1. Make the following program work.
    '''  
-     print("This program takes three numbers and returns the sum.")
-     total = 0
-
-     for i in range(3):
-         x = input("Enter a number: ")
-         total = total + i
-     print("The total is:", x)
-  
+# print("This program takes three numbers and returns the sum.")
+# total = 0
+#
+# for i in range(3):
+#     x = int(input("Enter a number: "))
+#     total = total + x
+# print("The total is:", total)
+#
 
 
 '''
@@ -18,9 +18,8 @@
      numbers from 2 to 100, inclusive.
 '''
 
-
-
-
+# for i in range(2,101,2):
+#     print(i)
 
 '''
   3. Write a program that will use a WHILE loop to count from
@@ -31,12 +30,11 @@
 
 
 
-
-
 '''
   4. Write a program that prints a random integer from 1 to 10 (inclusive).
 '''
-
+# import random
+# print(random.randrange(1,11))
 
 
 
@@ -52,3 +50,17 @@
      if statements.
       
 '''
+total = 0
+pos = 0
+neg = 0
+zer = 0
+for i in range(7):
+    num = int(input("Put in a number!"))
+    total+=num
+    if num % 2 == 0:
+        pos+=1
+    elif num == 0:
+        zer+=1
+    else:
+        neg+=1
+print("Your total is",total)

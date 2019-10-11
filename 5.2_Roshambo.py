@@ -10,14 +10,20 @@ Add conditional statements to figure out who wins and keep the records
 When the user quits print a win/loss record
 
 '''
+import random
+thing2= random.randrange(0,4)
+true = True
+while true:
+    Q = int(input("What is your choice? \n 1. rock \n 2. paper \n 3. scissors"))
+    Q2 = int(input("Do you want to quit?"))
+    if thing2 == 1:
+        print("rock")
+    elif thing2 == 2:
+        print("paper")
+    else:
+        print("scissors")
 
-
-
-
-
-
-
-
-
+    if Q2.lower == "no":
+    true = False
 
 
